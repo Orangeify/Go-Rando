@@ -6,11 +6,9 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      background-color: #f2f2f2;
+      text-align: center;
+      padding-top: 50px;
+      background-color: #f0f0f0;
     }
     .message {
       font-size: 24px;
@@ -19,19 +17,22 @@
   </style>
 </head>
 <body>
-  <div class="message" id="randomMessage"></div>
+  <div class="message" id="message"></div>
 
   <script>
     const messages = [
-      "Keep smiling, the world needs your light!",
-      "Every day is a fresh start!",
-      "You’re doing better than you think.",
-      "Progress is progress, no matter how small.",
-      "Just breathe. You’ve got this!"
+      "You're doing amazing!",
+      "Keep reaching for the stars 🚀",
+      "Today is a fresh start.",
+      "Believe in yourself!",
+      "Smile, it's contagious 😄",
+      "Adventure is out there!",
+      "One step at a time.",
+      "Create something great today."
     ];
 
     const randomIndex = Math.floor(Math.random() * messages.length);
-    document.getElementById("randomMessage").textContent = messages[randomIndex];
+    document.getElementById("message").textContent = messages[randomIndex];
   </script>
 </body>
 </html>
